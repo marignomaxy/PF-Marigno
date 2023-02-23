@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    width: 82px;
+    height: 62px;
+    margin-left: 5px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+
+footer p{
+    color: white;
+}
+
+
+.marginLiNav{
+    margin-left: 20px;
+}
+
+.imgIndex{
+    height: 100vh;
+    margin-bottom: 10px;
+    border:1px solid black;
+    padding: 0 !important;
+}
+
+.textoIzq{
+    text-align: left;
+}
+
+.textoDer{
+    text-align: end;
+}
+
+.btnPortafolio:hover{
+    background-color: rgb(193, 193, 2);
+
+}
+
+.btnPortafolio{
+    background-color: yellow;
+}
+
+.btnPortafolioNav:hover{
+    background-color: rgb(193, 193, 2);
+
+}
+
+.btnPortafolioNav{
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.letrasNegras:hover{
+    color: black;
+}
+
+.letrasNegras{
+    color: black;
+}
+
+main{
+    height: 100%;
+}
+
+
+.imgRedes{
+    width: 40px;
+    height: 40px;
+}
+
+.containerFlex{
+    display: flex;
+}
+
+
+
