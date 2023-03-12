@@ -4,101 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificados</title>
+    <meta name="description" content="Certificados de Maximiliano Marigno">
+    <meta name="keywords" content="certificados,portafolio,maximiliano,marigno,cursos">
 
+    <title>Certificados-Maximiliano Marigno</title>
+    
+    <!-- Estilos -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <a href="../index.html"><img src="../img/Logo.png" alt="Logo" class="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-5 mx-auto btnPortafolioNav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle letrasNegras" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Portafolio
-                                </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./portafolioPaginas.html">Portafolio Paginas</a></li>
-                                <li><a class="dropdown-item" href="./portafolioDiseños.html">Portafolio Diseños</a></li>
-                            </ul>
+        <!-- Barra de navegacion -->
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a href="../index.html"><img src="../img/Logo.png" alt="Logo" class="logo"></a>
+                <!-- Hamburgeusa Collapso -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Boton Portafolio -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto me-1 ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btnPortafolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portafolio
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./portafolioPaginas.html">Portafolio Paginas</a></li>
+                            <li><a class="dropdown-item" href="./portafolioDiseños.html">Portafolio Diseños</a></li>
                         </ul>
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./certificados.html">Certificados</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                                </li>
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- Menu der -->
+                        <li class="nav-item bordeMenuMed marginMenu ">
+                            <a class="nav-link btnMenuDer" aria-current="page" href="./certificados.html">Certificados</a>
+                        </li>
+                        <li class="nav-item bordeMenuUlt">
+                            <a class="nav-link btnMenuDer" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
     </header>
+
     <main>
         <section>
+            <!-- Titulo -->
             <article class="text-center">
                 <h1>Certificados</h1>
             </article>
-            <article class="containter ">
-                <div class="row">
-                    <div class="card col-sm-12 col-xl-4 ms-5 mb-3" style="width: 18rem;">
-                        <img src="https://hf-files-oregon.s3.amazonaws.com/hdpredtecnolgica_kb_attachments/2021/02-23/0bb0de18-45b2-4ecb-a369-c4b8e5385eb9/Certificado_elearning_UTN.png" class="card-img-top" alt="...">
+            <!-- Listado de Certificados -->
+            <article class="containterCert text-center ">
+                <div class="row align-items-star">
+
+                    <!-- Tarjeta -->
+                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
+                        <!-- Imagen tarjeta -->
+                        <img src="../img/react.PNG" class="card-img-top imgCard" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Branding</h5>
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <a href="#" class="btn btnPortafolio">Ver Certificado</a>
+                            <!-- Titulo tarjeta -->
+                            <h2 class="card-title">Certificado UTN</h2>
+                            <!-- Texto tarjeta -->
+                            <p class="card-text">Desarrollo en React JS</p>
+                            <!-- Boton tarjeta -->
+                            <a href="https://drive.google.com/file/d/1AC7DHBJ7xx9yDuicdfWgtcliVV7t12rL/view?usp=sharing" class="btn btnPortafolio">Ver Certificado</a>
                         </div>
                     </div>
 
-                    <div class="card col-sm-12 col-xl-4 ms-5 mb-3" style="width: 18rem;">
-                        <img src="https://hf-files-oregon.s3.amazonaws.com/hdpredtecnolgica_kb_attachments/2021/02-23/0bb0de18-45b2-4ecb-a369-c4b8e5385eb9/Certificado_elearning_UTN.png" class="card-img-top" alt="...">
+                    <!-- Tarjeta -->
+                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
+                        <!-- Imagen tarjeta -->
+                        <img src="../img/angular.PNG" class="card-img-top imgCard" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Branding</h5>
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <a href="#" class="btn btnPortafolio">Ver Certificado</a>
+                            <!-- Titulo tarjeta -->
+                            <h2 class="card-title">Certificado UTN</h2>
+                            <!-- Texto tarjeta -->
+                            <p class="card-text">Desarrollo en Angular</p>
+                            <!-- Boton tarjeta -->
+                            <a href="https://drive.google.com/file/d/1hkMbW3evT4sHz7aQ23_a5nrXkYTYRdtZ/view?usp=sharing" class="btn btnPortafolio">Ver Certificado</a>
                         </div>
                     </div>
 
-                    <div class="card col-sm-12 col-xl-4 ms-5 mb-3" style="width: 18rem;">
-                        <img src="https://hf-files-oregon.s3.amazonaws.com/hdpredtecnolgica_kb_attachments/2021/02-23/0bb0de18-45b2-4ecb-a369-c4b8e5385eb9/Certificado_elearning_UTN.png" class="card-img-top" alt="...">
+                    <!-- Tarjeta -->
+                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
+                        <!-- Imagen tarjeta -->
+                        <img src="../img/Photoshop .png" class="card-img-top imgCard" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Branding</h5>
+                            <!-- Titulo tarjeta -->
+                            <h2 class="card-title">Branding</h2>
+                            <!-- Texto tarjeta -->
                             <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <a href="#" class="btn btnPortafolio">Ver Certificado</a>
+                            <!-- Boton tarjeta -->
+                            <a href="https://drive.google.com/file/d/1LE3FeIN2gPGURNcGm45HO24EFMlrBrlV/view?usp=sharing" class="btn btnPortafolio">Ver Certificado</a>
                         </div>
                     </div>
 
-                    <div class="card col-sm-12 col-xl-4 ms-5 mb-3" style="width: 18rem;">
-                        <img src="https://hf-files-oregon.s3.amazonaws.com/hdpredtecnolgica_kb_attachments/2021/02-23/0bb0de18-45b2-4ecb-a369-c4b8e5385eb9/Certificado_elearning_UTN.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Branding</h5>
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <a href="#" class="btn btnPortafolio">Ver Certificado</a>
-                        </div>
-                    </div>
-
-                    <div class="card col-sm-12 col-xl-4 ms-5 mb-3" style="width: 18rem;">
-                        <img src="https://hf-files-oregon.s3.amazonaws.com/hdpredtecnolgica_kb_attachments/2021/02-23/0bb0de18-45b2-4ecb-a369-c4b8e5385eb9/Certificado_elearning_UTN.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Branding</h5>
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <a href="#" class="btn btnPortafolio">Ver Certificado</a>
-                        </div>
-                    </div>
-
-                    
-        
         </section>
     </main>
     <footer>

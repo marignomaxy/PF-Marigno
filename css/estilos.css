@@ -1,86 +1,235 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.logo{
-    width: 82px;
-    height: 62px;
-    margin-left: 5px;
+section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(219, 219, 219) 55%, rgb(50, 50, 50) 100%);
 }
 
-li a{
-    text-decoration: none;
+li a {
+  text-decoration: none;
 }
 
-
-footer p{
-    color: white;
+footer p {
+  color: white;
 }
 
-
-.marginLiNav{
-    margin-left: 20px;
+.logo {
+  width: 82px;
+  height: 62px;
+  margin-left: 5px;
 }
 
-.imgIndex{
-    height: 100vh;
-    margin-bottom: 10px;
-    border:1px solid black;
-    padding: 0 !important;
+.marginLiNav {
+  margin-left: 20px;
 }
 
-.textoIzq{
-    text-align: left;
+.textoIzq {
+  text-align: left;
 }
 
-.textoDer{
-    text-align: end;
+.textoDer {
+  text-align: end;
 }
 
-.btnPortafolio:hover{
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.colorMenu, .btnMenuDer:focus, .bordeMenuMed, .bordeMenuUlt {
+  background-color: #D1BD00;
+}
+
+.bordeMenuUlt {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.bordeMenuMed {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.btnPortafolio, .btnEnviar {
+  transition: all 400ms;
+  background-color: #D1BD00;
+  color: black;
+  border-radius: 5px;
+}
+.btnPortafolio:hover, .btnEnviar:hover {
+  background-color: #bdaa00;
+  color: black;
+  transform: scale(1.1);
+}
+.btnPortafolio:focus, .btnEnviar:focus {
+  background-color: #D1BD00;
+  color: black;
+}
+
+.btnMenuDer {
+  transition: all 400ms;
+  color: black;
+}
+.btnMenuDer:hover {
+  background-color: #bdaa00;
+  color: black;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+.btnMenuDer:focus {
+  color: black;
+}
+
+.dropdown-menu {
+  background-color: #D1BD00;
+}
+
+.dropdown-item {
+  transition: all 200ms;
+  color: black;
+}
+.dropdown-item:hover {
+  background-color: #bdaa00;
+  color: black;
+  transform: scale(1.1);
+}
+.dropdown-item:focus {
+  background-color: #D1BD00;
+  color: black;
+}
+
+.marginMenu {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 666px !important;
+}
+
+@media (max-height: 768px) {
+  .marginMenu {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 423px !important;
+  }
+}
+@media (max-width: 991px) {
+  .marginMenu {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .btnPortafolio, .btnEnviar {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .bordeMenuUlt {
+    border-radius: 0px 0px 5px 5px;
+  }
+  .bordeMenuMed {
+    border-radius: 0px;
+  }
+  .marginMenu {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .dropdown-menu {
+    border-radius: 0px;
+    margin: 0px !important;
     background-color: rgb(193, 193, 2);
-
+  }
+}
+nav div a img:hover {
+  transition: all 400ms;
+  transform: scale(1.1);
 }
 
-.btnPortafolio{
-    background-color: yellow;
+.imgIndex {
+  height: 100vh;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 0 !important;
 }
 
-.btnPortafolioNav:hover{
-    background-color: rgb(193, 193, 2);
-
+@media (max-width: 767px) {
+  .marginFoto {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+    margin-right: auto !important;
+    margin-left: 7px !important;
+  }
+}
+.imgRedes {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
-.btnPortafolioNav{
-    background-color: yellow;
-    color: black;
-    border-radius: 5px;
+.marginSection {
+  margin-right: 0px !important;
 }
 
-
-.letrasNegras:hover{
-    color: black;
+.marginInfo {
+  margin-right: 200px !important;
 }
 
-.letrasNegras{
-    color: black;
+.containerFlex {
+  display: flex;
 }
 
-main{
+.btnEnviar {
+  width: 200px;
+  height: 40px;
+}
+
+@media (max-width: 991px) {
+  .containerFlex {
+    display: block;
+  }
+  .marginInfo {
+    margin-right: 0px !important;
+  }
+  .marginContacto {
+    margin-top: 0px !important;
+    margin-bottom: 100px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .marginFormulario {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+.row {
+  margin-right: 0px !important;
+}
+
+.containterCert {
+  height: 100vh;
+}
+
+article div div img {
+  padding: 3px;
+}
+
+@media (max-width: 667px) {
+  .containterCert {
     height: 100%;
+  }
+}
+.imgCard {
+  width: 265px;
+  height: 200px;
 }
 
-
-.imgRedes{
-    width: 40px;
-    height: 40px;
+article div div div h2 {
+  font-size: 25px;
 }
 
-.containerFlex{
-    display: flex;
-}
-
-
-
+/*# sourceMappingURL=estilos.css.map */

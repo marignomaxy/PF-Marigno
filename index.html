@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <meta name="description" content="Portafolio para Programador Web Maximiliano Marigno">
+    <meta name="keywords" content="portafolio,programacion,maximiliano,marigno,web,HTML,JS,angular,react JS">
+
+    <title>Bienvenido a mi Portafolio-Maximiliano Marigno</title>
+
+    <!-- Estilos -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="./css/estilos.css">
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,30 +24,32 @@
 </head>
 <body>
     <header>
+        <!-- Barra de navegacion -->
         <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
+                <!-- Logo -->
                 <a href="./index.html"><img src="./img/Logo.png" alt="Logo" class="logo"></a>
+                <!-- Hamburgeusa Collapso -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Boton Portafolio -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-5 mx-auto btnPortafolioNav">
+                    <ul class="navbar-nav mx-auto me-1 ">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle letrasNegras" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle btnPortafolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Portafolio
                             </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./pages/portafolioPaginas.html">Portafolio Paginas</a></li>
                             <li><a class="dropdown-item" href="./pages/portafolioDiseños.html">Portafolio Diseños</a></li>
                         </ul>
-                    </ul>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./pages/certificados.html">Certificados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                            </li>
+                    <!-- Menu der -->
+                        <li class="nav-item bordeMenuMed marginMenu ">
+                            <a class="nav-link btnMenuDer" aria-current="page" href="./pages/certificados.html">Certificados</a>
+                        </li>
+                        <li class="nav-item bordeMenuUlt">
+                            <a class="nav-link btnMenuDer" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -47,23 +59,28 @@
     </header>
     <main>
         <section>
-            <article class="text-center">
-                <div>
-                    <h1>Sobre Mi</h1>
-                </div>
-            </article>
             <div class="container-sm">
-            <article class="row">
-                <p class="col text-center mt-auto mb-auto">
-                    Soy Maximiliano Marigno,tengo 24 años.
-                    Soy desarrollador web con amplios conocimientos en React JS ,Angular y Node. 
-                    Tambien cuento con cursos de diseño web,diseño ux/ui,adobe Illustrator y Photoshop
-                    Soy la persona idea para crear tu branding de marca abarcando todo lo que tiene que 
-                    ver con diseño,desarrollo web y llevar a lo real tu sueño!
-                </p>
-                <img class="col imgIndex" src="./img/Foto Mia.jfif" alt="Imagen Presentacion">
-            </article>
-        </div>
+                <!-- Titulo -->
+                <article class="text-center">
+                    <div>
+                        <h1>Sobre Mi</h1>
+                    </div>
+                </article>
+                <!-- Texto -->
+                <div class="container row">
+                    <article class="col-sm-12 col-md-6 mt-auto mb-auto">
+                        <p class="text-center">
+                            Soy Maximiliano Marigno,tengo 24 años.
+                            Soy desarrollador web con amplios conocimientos en React JS ,Angular y Node. 
+                            Tambien cuento con cursos de diseño web,diseño ux/ui,adobe Illustrator y Photoshop
+                            Soy la persona idea para crear tu branding de marca abarcando todo lo que tiene que 
+                            ver con diseño,desarrollo web y llevar a lo real tu sueño!
+                        </p>
+                    </article>
+                        <!-- Foto -->
+                        <img class="imgIndex marginFoto col-sm-12 col-md-6 " src="./img/Foto Mia.jfif" alt="Imagen Presentacion">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -74,6 +91,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

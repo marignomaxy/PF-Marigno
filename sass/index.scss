@@ -1,0 +1,15 @@
+@use "./general.scss";
+
+
+.imgIndex{
+    height: 100vh;
+    margin-bottom: 10px;
+    border:1px solid black;
+    padding: 0 !important;
+}
+
+@media (max-width: 767px){
+    .marginFoto{
+        @include general.margin(20px,40px,auto,7px)
+    }
+}

@@ -1,0 +1,41 @@
+@use "./general.scss";
+
+.row{
+    margin-right: 0px !important;
+}
+
+.containterCert{
+    height: 100vh;
+}
+
+article{
+    div{
+        div{
+            img{
+                padding: 3px;
+            }
+        }
+    }
+}
+
+@media (max-width: 667px){
+    .containterCert{
+        height: 100%;
+    }
+}
+
+.imgCard{
+    @include general.tamano(265px,200px)
+}
+
+article{
+    div{
+        div{
+            div{
+                h2{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

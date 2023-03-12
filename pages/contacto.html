@@ -4,62 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <meta name="description" content="Contacta con Maximiliano Marigno">
+    <meta name="keywords" content="contacto,portafolio,maximiliano,marigno">
 
+    <title>Contacto-Maximiliano Marigno</title>
+    
+    <!-- Estilos -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <a href="../index.html"><img src="../img/Logo.png" alt="Logo" class="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-5 mx-auto btnPortafolioNav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle letrasNegras" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Portafolio
-                                </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./portafolioPaginas.html">Portafolio Paginas</a></li>
-                                <li><a class="dropdown-item" href="./portafolioDiseños.html">Portafolio Diseños</a></li>
-                            </ul>
+        <!-- Barra de navegacion -->
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a href="../index.html"><img src="../img/Logo.png" alt="Logo" class="logo"></a>
+                <!-- Hamburgeusa Collapso -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Boton Portafolio -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto me-1 ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btnPortafolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portafolio
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./portafolioPaginas.html">Portafolio Paginas</a></li>
+                            <li><a class="dropdown-item" href="./portafolioDiseños.html">Portafolio Diseños</a></li>
                         </ul>
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./certificados.html">Certificados</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                                </li>
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- Menu der -->
+                        <li class="nav-item bordeMenuMed marginMenu ">
+                            <a class="nav-link btnMenuDer" aria-current="page" href="./certificados.html">Certificados</a>
+                        </li>
+                        <li class="nav-item bordeMenuUlt">
+                            <a class="nav-link btnMenuDer" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
     </header>
     <main>
-        <section>
-            <div class="container-sm containerFlex">
-                <article class="containerBlock mt-auto mb-auto">
-                    <p>Calle Pepito 123,Argentina</p>
-                    <p>Telefono 2213644416</p>
-                    <p>Mail:Marignomaxy@gmail.com</p>
-                    <h3>Redes Sociales</h3>
-                    <a href="#"><img class="imgRedes" src="../img/facebook.png" alt="facebok"></a>
-                    <a href="#"><img class="imgRedes" src="https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-jaune.png" alt="linkedin"></a>
-                    <a href="#"><img class="imgRedes" src="../img/instagram.png" alt="instagram"></a>
-                    <a href="#"><img class="imgRedes" src="../img/whatsapp.png" alt="whatsapp"></a>
-                </article>
-                <article class="mx-auto mt-5 mb-5" >
-                    <h2 class="text-center">Contacto</h2>
+        <section class="container-lg marginSection">
+            <div class="containerFlex ">
+
+                <!-- Formulario -->
+                <article class="mx-auto mb-4 text-center " >
+                    <h1 class="text-center">Contacto</h1>
                     <form>
                         <div class="mb-3">
                             <input type="text" class="form-control" id="nombre" placeholder="Nombre">
@@ -76,9 +79,20 @@
                         <div class="mb-3">
                             <textarea class="form-control" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
                         </div>
-
-                        <button class="btn btnPortafolio">Enviar</button>
+                        <button class="btn btnEnviar">Enviar</button>
                     </form>
+                </article>
+
+                <!-- Informacion -->
+                <article class="containerBlock text-center marginInfo mt-auto mb-auto">
+                    <p>Calle Pepito 123,Argentina</p>
+                    <p>Telefono 2213644416</p>
+                    <p>Mail:Marignomaxy@gmail.com</p>
+                    <h3>Redes Sociales</h3>
+                    <a href="https://github.com/marignomaxy"><img class="imgRedes" src="../img/git.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/maximiliano-marigno-7b6772173/"><img class="imgRedes" src="../img/Linkedin.png" alt="Linkedin"></a>
+                    <a href="https://www.behance.net/maximarigno"><img class="imgRedes" src="../img/Behance.png" alt="Behance"></a>
+                    <a href="#"><img class="imgRedes" src="../img/Facebook1.png" alt="Facebook"></a>
                 </article>
         </div>
         </section>

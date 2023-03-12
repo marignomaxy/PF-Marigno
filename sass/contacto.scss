@@ -1,0 +1,41 @@
+@use "./general.scss";
+
+.imgRedes{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.marginSection{
+    margin-right: 0px !important;
+}
+
+.marginInfo{
+    margin-right: 200px !important;
+}
+
+.containerFlex{
+    display: flex;
+}
+
+.btnEnviar{
+    @extend .btnPortafolio;
+    @include general.tamano(200px,40px)
+}
+
+@media (max-width: 991px){
+    .containerFlex{
+        display: block;
+    }
+    
+    .marginInfo{
+        margin-right: 0px !important;
+    }
+
+    .marginContacto{
+        @include general.margin(0px,100px,auto,auto) ;
+    }
+
+    .marginFormulario{
+        @include general.margin(50px,50px,auto,auto) ;
+    }
+}
