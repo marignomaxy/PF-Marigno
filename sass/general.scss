@@ -55,16 +55,6 @@ main{
     background-color: #D1BD00;
 }
 
-.bordeMenuUlt{
-    @extend .colorMenu;
-    border-radius: 0px 5px 5px 0px;
-}
-
-.bordeMenuMed{
-    @extend .colorMenu;
-    border-radius: 5px 0px 0px 5px;
-}
-
 
 @mixin scaleTiempo($tiempo){
     transition: all $tiempo;
@@ -84,7 +74,6 @@ main{
 
 .btnPortafolio{
     @include scaleTiempo(400ms);
-    background-color: #D1BD00;
     color: black;
     border-radius: 5px;
     &:hover{
@@ -99,77 +88,9 @@ main{
     }
 }
 
-.btnMenuDer{
-    @include scaleTiempo(400ms);
-    color: black;
-    &:hover{
-        background-color: #bdaa00;
-        color: black;
-        border-radius: 5px;
-        transform: scale(1.1);
-    }
-    &:focus{
-        @extend .colorMenu;
-        color: black;
-    }
-}
-
-.dropdown-menu{
-    background-color: #D1BD00;
-}
-
-.dropdown-item{
-    @include scaleTiempo(200ms);
-    color: black;
-    &:hover{
-        background-color: #bdaa00;
-        color: black;
-        transform: scale(1.1);
-        
-    }
-    &:focus{
-        background-color: #D1BD00;
-        color: black;
-    }
-}
 
 .marginMenu{
     @include margin(0px,0px,0px,666px)
-}
-
-@media (max-height: 768px){
-    .marginMenu{
-        @include margin(0px,0px,0px,423px)
-    }
-}
-
-
-@media (max-width: 991px){
-    .marginMenu{
-        @include margin(auto,auto,auto,auto)
-    }
-
-    .btnPortafolio{
-        border-radius: 5px 5px 0px 0px;
-    }
-
-    .bordeMenuUlt{
-        border-radius: 0px 0px 5px 5px;
-    }
-
-    .bordeMenuMed{
-        border-radius: 0px;
-    }
-
-    .marginMenu{
-        @include margin(0px,0px,0px,0px)
-    }
-
-    .dropdown-menu{
-        border-radius: 0px;
-        margin: 0px !important;
-        background-color: rgb(193, 193, 2);;
-    }
 }
 
 nav{
@@ -184,3 +105,57 @@ nav{
         }
     }
 }
+
+.menuColor{
+    background-color:#D1BD00 ;
+    border-radius: 5px;
+}
+
+.dropdown-menu{
+    background-color:#D1BD00;
+}
+
+.displayMenuDrop{
+    display: list-item;
+}
+
+.displayMenuSep{
+    display: none;
+    list-style: none;
+}
+
+@media (max-height: 1200px){
+    .marginMenu{
+        @include margin(0px,0px,0px,423px)
+    }
+}
+
+
+
+@media (max-width: 991px){
+    .marginMenu{
+        @include margin(auto,auto,auto,auto)
+    }
+
+    .btnPortafolio{
+        @include scaleTiempo(0ms);
+        border-radius: 5px 5px 0px 0px;
+        &:hover{
+            transform: scale(1.0);
+        }
+    }
+
+    .marginMenu{
+        @include margin(0px,0px,0px,0px)
+    }
+
+    .displayMenuDrop{
+        display: none;
+    }
+
+    .displayMenuSep{
+        display: list-item;
+    }
+}
+
+

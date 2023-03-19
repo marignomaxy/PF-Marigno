@@ -4,6 +4,10 @@
     margin-right: 0px !important;
 }
 
+.containterPorta{
+    height: 100%;
+}
+
 .containterCert{
     height: 100vh;
 }
@@ -18,13 +22,9 @@ article{
     }
 }
 
-@media (max-width: 667px){
-    .containterCert{
-        height: 100%;
-    }
-}
-
 .imgCard{
+    margin: auto;
+    border-radius: 5px;
     @include general.tamano(265px,200px)
 }
 
@@ -37,5 +37,17 @@ article{
                 }
             }
         }
+    }
+}
+
+@media (max-height: 1000px) {
+    .containterPorta{
+        height: 100%;
+    }
+}
+
+@media (max-width: 993px) {
+    .containterCert{
+        height: 100%;
     }
 }
