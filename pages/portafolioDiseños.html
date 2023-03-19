@@ -32,23 +32,37 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Boton Portafolio -->
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto me-1 ">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btnPortafolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul class="navbar-nav menuColor mx-auto me-1 ">
+                        <!-- Boton Inicio -->
+                        <li class="nav-item ">
+                            <a class="nav-link btnPortafolio" href="../index.html">Inicio</a>
+                        </li>
+                        <!-- Botones Escondidos-->
+                        <li class="nav-item displayMenuSep ">
+                            <a class="nav-link btnPortafolio" href="./portafolioPaginas.html">Portafolio Paginas</a>
+                        </li>
+                        <li class="nav-item displayMenuSep ">
+                            <a class="nav-link btnPortafolio" href="./portafolioDiseños.html">Portafolio Diseños</a>
+                        </li>
+                        <!-- Boton Portafolio -->
+                        <li class="nav-item dropdown displayMenuDrop">
+                            <a class="nav-link dropdown-toggle btnPortafolio " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Portafolio
                             </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./portafolioPaginas.html">Portafolio Paginas</a></li>
-                            <li><a class="dropdown-item" href="./portafolioDiseños.html">Portafolio Diseños</a></li>
-                        </ul>
-                    <!-- Menu der -->
-                        <li class="nav-item bordeMenuMed marginMenu ">
-                            <a class="nav-link btnMenuDer" aria-current="page" href="./certificados.html">Certificados</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item btnPortafolio" href="./portafolioPaginas.html">Portafolio Paginas</a></li>
+                                <li><a class="dropdown-item btnPortafolio" href="./portafolioDiseños.html">Portafolio Diseños</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item bordeMenuUlt">
-                            <a class="nav-link btnMenuDer" href="./contacto.html">Contacto</a>
+                        <!-- Boton Certificado -->
+                        <li class="nav-item  ">
+                            <a class="nav-link btnPortafolio" aria-current="page" href="./certificados.html">Certificados</a>
+                        </li>
+                        <!-- Boton Contacto -->
+                        <li class="nav-item ">
+                            <a class="nav-link btnPortafolio" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -63,84 +77,139 @@
                 <h1>Diseños</h1>
             </article>
 
-            <!-- Listado de tarjetas -->
-            <article class="containter text-center">
-                <div class="row align-items-star">
-
-                    <!-- Tarjeta -->
-                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
-                        <!-- Imagen tarjeta -->
-                        <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
-                        <!-- Cuerpo tarjeta -->
-                        <div class="card-body">
-                            <!-- Titulo tarjeta -->
-                            <h2 class="card-title">Branding Amapola</h2>
-                            <!-- Parrafo Tarjeta -->
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <!-- Boton Tarjeta -->
-                            <a href="https://www.behance.net/gallery/165228225/Amapola-Tienda-Natural" class="btn btnPortafolio">Ver Diseño</a>
+            <article>
+                <div class="container containterPorta text-center">
+                    <div class="row gx-5 ">
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta -->
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Tarjeta -->
-                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
-                        <!-- Imagen tarjeta -->
-                        <img src="../img/diseño random.png" class="card-img-top imgCard" alt="...">
-                        <!-- Cuerpo tarjeta -->
-                        <div class="card-body">
-                            <!-- Titulo tarjeta -->
-                            <h2 class="card-title">Branding Mimo</h2>
-                            <!-- Parrafo Tarjeta -->
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <!-- Boton Tarjeta -->
-                            <a href="https://www.behance.net/gallery/117732397/MIMO-identidad" class="btn btnPortafolio">Ver Diseño</a>
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta -->
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta -->
-                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
-                        <!-- Imagen tarjeta -->
-                        <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
-                        <!-- Cuerpo tarjeta -->
-                        <div class="card-body">
-                            <!-- Titulo tarjeta -->
-                            <h2 class="card-title">Branding Amapola</h2>
-                            <!-- Parrafo Tarjeta -->
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <!-- Boton Tarjeta -->
-                            <a href="https://www.behance.net/gallery/165228225/Amapola-Tienda-Natural" class="btn btnPortafolio">Ver Diseño</a>
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta -->
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta -->
-                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
-                        <!-- Imagen tarjeta -->
-                        <img src="../img/diseño random.png" class="card-img-top imgCard" alt="...">
-                        <!-- Cuerpo tarjeta -->
-                        <div class="card-body">
-                            <!-- Titulo tarjeta -->
-                            <h2 class="card-title">Branding Mimo</h2>
-                            <!-- Parrafo Tarjeta -->
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <!-- Boton Tarjeta -->
-                            <a href="https://www.behance.net/gallery/117732397/MIMO-identidad" class="btn btnPortafolio">Ver Diseño</a>
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta --> 
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta -->
-                    <div class="card col-sm-12 col-xxl-4 col-xl-6 col-lg-8 ms-5 mb-3" style="width: 18rem;">
-                        <!-- Imagen tarjeta -->
-                        <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
-                        <!-- Cuerpo tarjeta -->
-                        <div class="card-body">
-                            <!-- Titulo tarjeta -->
-                            <h2 class="card-title">Branding Amapola</h2>
-                            <!-- Parrafo Tarjeta -->
-                            <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
-                            <!-- Boton Tarjeta -->
-                            <a href="https://www.behance.net/gallery/165228225/Amapola-Tienda-Natural" class="btn btnPortafolio">Ver Diseño</a>
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta -->
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta -->
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta -->
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-auto col-lg-4 col-xxl-3 mb-5 mt-5">
+                            <!-- Tarjeta -->
+                            <div class="card" style="width: 18rem;">
+                                <!-- Imagen tarjeta -->
+                                <img src="../img/diseño.PNG" class="card-img-top imgCard" alt="...">
+                                <div class="card-body">
+                                    <!-- Titulo tarjeta -->
+                                    <h2 class="card-title">Branding Amapola</h2>
+                                    <!-- Parrafo tarjeta -->
+                                    <p class="card-text">Pagina Realizada para el curso de Photoshop e Illustrator</p>
+                                    <!-- Boton tarjeta -->
+                                    <a href="#" class="btn btnPortafolio colorMenu">Ver Pagina</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
+            </article>
 
         <section>
     </main>
