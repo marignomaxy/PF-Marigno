@@ -11,8 +11,8 @@
 }
 
 
-.containerFlex{
-    display: flex;
+.containerFormulario{
+    display: block;
     height: 100vh;
 }
 
@@ -20,21 +20,8 @@
     @extend .btnPortafolio;
     @include general.tamano(200px,40px)
 }
-
-@media (max-width: 991px){
-    .containerFlex{
-        display: block;
-    }
-    .marginTop{
-        @include general.margin(120px,auto,auto,auto)
-    }
-    
-
-    .marginContacto{
-        @include general.margin(0px,100px,auto,auto) ;
-    }
-
-    .marginFormulario{
-        @include general.margin(50px,50px,auto,auto) ;
+@media  (max-height: 900px) {
+    .containerFormulario{
+        height: 100%;
     }
 }
